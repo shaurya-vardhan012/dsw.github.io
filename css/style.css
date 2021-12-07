@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Lobster&family=Poppins:wght@300&family=Yuji+Syuku&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.top-bar
+{
+    
+    font-family: 'Yuji Syuku', serif;
+    width: 100%;
+    background-color: black;
+}
+.container
+{
+    width: 100%;
+    
+}
+
+.container
+{
+    font-size: 18px;
+}
+.flex
+{
+    display: flex;
+}
+
+.align-items
+{
+    align-items: center;
+}
+
+.space-between
+{
+    justify-content: space-between;
+}
+
+.navigation
+{
+    margin-left: 30px;
+}
+.navigation li
+{
+    padding:1rem 1rem;
+    list-style: none;
+    
+}
+
+
+.navigation a
+{
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: white;
+    transition: all 2s ease;
+}
+.navigation a:hover
+{
+    border-bottom: 2px solid white;
+}
+.login-register
+{
+    margin-right: 30px;
+}
+.login-register li
+{
+    padding:1rem 1rem;
+    list-style: none;
+    
+}
+.login-register a
+{
+    color: white;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: all 2s ease;
+}
+.login-register a:hover
+{
+    border-bottom: 2px solid white;
+}
+
+.login-content span
+{
+    margin-right: 10px;
+    color: white;
+}
+.cart
+{
+    margin: auto;
+}
+.login-register a:hover .fas a:hover
+{
+    border: transparent;
+}
+
+.login-content
+{
+    margin-right: 50px;
+}
+header.hero
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.781)),url(https://www.tigren.com/wp-content/uploads/2021/07/ecommerce-shopping-cart.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.images 
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background-position: center;
+    
+}
+
+
+.img-content
+{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+footer
+{
+    padding:20px 30px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.foot {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 18em;
+    align-items: flex-start;
+  }
+  
+  .item {
+    padding: 20px;
+    margin: 20px 100px;
+    font-size: 18px;
+    width: 25em;
+  }
+  
+  .subitem {
+    padding: 13px;
+    font-size: 15px;
+  }
+  
+  .subitem a {
+    text-decoration: none;
+    color: white;
+  }
+  section.content-details
+  {
+      width: 100%;
+      /* background-color: rgb(146, 163, 177); */
+      background-color: #1e272e;
+  }
+  section.content-details-2
+  {
+      width: 100%;
+      background-color: #d1d8e0;
+  }
+  .list-container
+  {
+      margin: auto;
+      margin-right: 100px;
+      text-align: center;
+      width: 80%;
+  }
+  .list-container .first-product-content
+  {
+      margin: auto;
+      margin-right: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      
+  }
+  .list-container .first-product-content img
+  {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      width: 200px;
+      height: auto;
+      outline: none;
+      border-radius: 5px;
+      box-shadow: 10px 15px 20px rgb(48, 46, 46);
+      transition: all 1.5s ease;
+  }
+  /* .list-container .first-product-content img:hover
+  {
+      width: 250px;
+      height: auto;
+  } */
+
+  .list-container .first-product-content .labels
+  {
+      flex-direction: column;
+      text-align: center;
+  }
+  .list-container .first-product-content .btn-of-products
+  {
+      margin-bottom: 40px;
+      
+  }
+  .list-container .first-product-content .btn-of-products button
+  {
+      border: none;
+      border-radius: 20px;
+      background-color: #34495e;
+      color: white;
+      padding: 10px 30px;
+      cursor: pointer;
+  }
+  
+  section.content-details-2 .list-container .first-product-content .btn-of-products button
+  {
+      border: none;
+      border-radius: 20px;
+      background-color: black;
+      padding: 10px 30px;
+      cursor: pointer;
+  }
+  .labels span
+  {
+      color: white;
+  }
+  section.content-details-2 .first-product-content .labels span
+  {
+      color: black;
+  }
+  section.content-details-2 .list-container .first-product-content img
+  {
+      border-radius: 20px;
+  }

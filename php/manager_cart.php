@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+// session_destroy();
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
     if(isset($_POST['add_to_card']))
@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             else
             {
                 $count=count($_SESSION['cart']);
-                $_SESSION['cart'][$count]=array('item_name'=>$_POST['item_name'],'price'=>$_POST['price'],'quantity'=>1);
+                $_SESSION['cart'][$count]=array('item_name'=>$_POST['item_name'],'price'=>$_POST['price']);
                 echo "<script>alert('Item added to the cart');
                     window.location.href='../index.html';</script>";
             }    
@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         }
         else
         {
-            $_SESSION['cart'][0]=array('item_name'=>$_POST['item_name'],'price'=>$_POST['price'],'quantity'=>1);
+            $_SESSION['cart'][0]=array('item_name'=>$_POST['item_name'],'price'=>$_POST['price']);
             echo "<script>alert('Item added to the cart');
                 window.location.href='../index.html';</script>";
         }

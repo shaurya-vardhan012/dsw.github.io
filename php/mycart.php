@@ -48,7 +48,7 @@ session_start();
     {
         margin-top:30px ;
     }
-    .table-content thead td
+    .table-content thead th
     {
         font-weight: 200;
         font-size: 30px;
@@ -101,11 +101,12 @@ session_start();
                 <table class="table-content">
                 <thead class="text-center">
                     <tr>
-                        <td>S.No</td>
-                        <td>Item Name</td>
-                        <td>Item Price</td>
-                        <td>Quantity</td>
-                        <td></td>
+                        <th>S.No</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <!-- <th>Quantity</th> -->
+                        <!-- <th>Total</th> -->
+                        <th></th>
                     </tr>
                     
                 </thead>
@@ -113,7 +114,7 @@ session_start();
                     <?php
                         $total=0;
                         if(isset($_SESSION['cart']))
-                        {
+                        {   
                             foreach($_SESSION['cart'] as $key=>$values)
                             {
                                 $sno=$key+1;
@@ -122,8 +123,7 @@ session_start();
                                 <tr>
                                     <td>$sno</td>
                                     <td>$values[item_name]</td>
-                                    <td>$values[price]</td>
-                                    <td><input class='text-center' type='number' value='$values[quantity]' min='1' max='10'></td>
+                                    <td>$values[price]<input type='hidden' class='iprice' value='$values[price]'></td>
                                     <td>
                                     <form action='manager_cart.php' method='post'>
                                         <button type='submit' name='remove' class='btn'>REMOVE</button>
@@ -153,6 +153,6 @@ session_start();
         
         
     </div>
-    
+
 </body>
 </html>

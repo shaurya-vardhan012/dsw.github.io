@@ -90,6 +90,17 @@ session_start();
         border: 1;
         border-collapse: collapse;
     }
+    .btn-btn
+    {
+        color: white;
+        background-color: purple;
+        padding: 8px 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 2px solid;
+        cursor: pointer;
+        
+    }
 </style>
 <body>
     <div class="hero">
@@ -153,6 +164,9 @@ session_start();
         
         
     </div>
+    <br><br>
+    <center>
+            <form action="../html/thanku.html" method="post"> <button name="placeorder" class="btn-btn">Place Order</button></form></center>
 
 </body>
 </html>
